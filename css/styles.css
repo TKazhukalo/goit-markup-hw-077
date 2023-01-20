@@ -201,9 +201,27 @@ ul {
     margin: 0;
 }
 @media screen and (max-width: 767px) {
+.header-border .container {
+    min-width: 320px;
+        max-width: 767px;
+        padding-left: 16px;
+        padding-right: 16px;
+    
+        margin-left: auto;
+        margin-right: auto;
+    
+        outline-offset: -2px;
+}
+    .header-border .container-mobile {
+        display: flex;
+            align-items: center;
+            justify-content: space-between;
+    }
     .header-nav{
         display: none;
     }
+
+       
 }
 @media screen and (min-width: 768px) {
     .header-nav .menu-link {
@@ -409,6 +427,18 @@ border-bottom: 1px solid #E7E9FC;
 
     transition: color var(--transition-duration-func), background-color var(--transition-duration-func);
 }
+.menu-link.current::after{
+
+           display: block;
+            content: '';
+            width: 100%;
+            height: 4px;
+            left: 0;
+            bottom: 0;
+            background-color: var(--color-active);
+            border-radius: 2px;
+        }
+
  .menu-link:hover,
  .menu-link:focus,
 .menu-link:active
@@ -762,8 +792,19 @@ screen and (min-width: 769px) and (min-resolution: 2dppx) {
  .item-team .team-list:last-child {
      margin-bottom: 0;
  }
+@media screen and (max-width: 427px) {
+    .item-team {
+        display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: center;
+    }
+    .team-list {
+        width: 264px;
+    }
+}
 
- @media screen and (min-width: 412px) and (max-width: 767px) {
+ @media screen and (min-width: 428px) and (max-width: 767px) {
  .team-list img {
     margin-left: auto;
     margin-right: auto;
@@ -1717,7 +1758,7 @@ overflow-y: scroll;
 }
 .mail-footer:focus {
 
-      border-color: var(--accent-color);
+        border-color: var(--accent-color);
 }
 .your-contacts {
     display: block;
@@ -1972,6 +2013,15 @@ overflow-y: scroll;
         }
 }
 /*mobile-menu*/
+/*@media screen and (max-width: 767px) {
+    .container-mobile {
+            display: flex;
+            justify-content: space-between;
+            align-items: center; 
+        }
+
+}*/
+
 @media screen and (max-width: 767px) {
     
 
@@ -2159,4 +2209,9 @@ overflow-y: scroll;
     line-height: 1.2;
     color: var(--color-text);
     margin-bottom: 48px;
+}
+@media screen and (max-width: 360px) {
+.mobile-contacts-link.accent {
+    font-size: 7vw;
+}
 }
