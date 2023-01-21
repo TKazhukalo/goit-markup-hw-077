@@ -173,7 +173,7 @@
 <symbol id="icon-uncheck" viewBox="0 0 32 32">
 <path stroke-width="2.5" stroke-miterlimit="4" stroke-linecap="butt" stroke-linejoin="miter" d="M4 1.25h24c1.519 0 2.75 1.231 2.75 2.75v24c0 1.519-1.231 2.75-2.75 2.75h-24c-1.519 0-2.75-1.231-2.75-2.75v-24c0-1.519 1.231-2.75 2.75-2.75z"></path>
 </symbol>
-<symbol id="icon-hamburger" viewBox="0 0 32 32">
+<symbol id="icon-hamburger" viewBox="0 0 32 22">
 <path d="M6.4 11.733v-2.133h19.2v2.133h-19.2zM6.4 17.067h19.2v-2.133h-19.2v2.133zM6.4 22.4h19.2v-2.133h-19.2v2.133z"></path>
 </symbol>
 </defs>
